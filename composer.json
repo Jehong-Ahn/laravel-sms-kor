@@ -1,0 +1,23 @@
+{
+    "name": "jehong-ahn/laravel-sms-kor",
+    "description": "",
+    "authors": [
+        {
+            "name": "Jehong Ahn",
+            "email": "toonitw@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "JehongAhn\\LaravelSmsKor\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
