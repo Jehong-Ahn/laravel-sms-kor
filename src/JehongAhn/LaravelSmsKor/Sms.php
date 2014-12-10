@@ -2,14 +2,13 @@
 
 class Sms {
 	
-	public static function send($data) { /*
-	@param Array
-		phone		string
-		message		string
-	@return Array
-		success		boolean
-		error		string
-	*/	
+	/**
+	 * Send a message through the cafe24.
+	 *
+	 * @param  array  $data = [phone, message]
+	 * @return array  [success, error]
+	 */
+	public static function send(array $data) {
 		$sms_url = "http://sslsms.cafe24.com/sms_sender.php";
 		$sms['user_id'] = base64_encode(\Config::get('laravel-sms-kor::cafe24.user_id'));
 		$sms['secure'] = base64_encode(\Config::get('laravel-sms-kor::cafe24.secure'));
@@ -105,9 +104,6 @@ class Sms {
 				'error' 	=> \Lang::get('laravel-sms-kor::sms.unknown_error', ['code'=>$Result]),
 			];
 		}
-		
-		
-		
 	}
 	
 	
