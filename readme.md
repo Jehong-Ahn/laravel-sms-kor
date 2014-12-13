@@ -8,7 +8,7 @@ Currently available for cafe24.
 
 1. composer.json
 1. composer update
-1. app/config/app.php
+1. app/config/app.php  
 	'providers' => Array(
 		...,
 		'JehongAhn\LaravelSmsKor\LaravelSmsKorServiceProvider'
