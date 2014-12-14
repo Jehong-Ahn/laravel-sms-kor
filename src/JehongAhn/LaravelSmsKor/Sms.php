@@ -100,6 +100,13 @@ class Sms {
 		
 		else {
 			return [
+				'user_id' => \Config::get('laravel-sms-kor::cafe24.user_id'),
+				'secure' => \Config::get('laravel-sms-kor::cafe24.secure'),
+				'sphone1' => \Config::get('Laravel-sms-kor::config.sender_phone1'),
+				'sphone2' => \Config::get('laravel-sms-kor::config.sender_phone2'),
+				'sphone3' => \Config::get('laravel-sms-kor::config.sender_phone3'),
+				'data' => $data,
+				
 				'success'	=> false,
 				'error' 	=> \Lang::get('laravel-sms-kor::sms.unknown_error', ['code'=>$Result]),
 			];
