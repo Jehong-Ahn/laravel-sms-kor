@@ -20,7 +20,7 @@ Currently available for cafe24.
 	);
 ```	
 - Publish the package config files.  
-   `php artisan config:publish JehongAhn/LaravelSmsKor`
+   `php artisan config:publish jehong-ahn/laravel-sms-kor`
 - Customize the package config files.
    `app/config/packages/jehong-ahn/laravel-sms-kor`
 
