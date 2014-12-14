@@ -20,8 +20,17 @@ Currently available for cafe24.
 	);
 ```	
 - Publish the package config files.  
-   `php artisan config:publish vendor/package`
-- Customize the package config files.  
-   `app/config/JehongAhn/LaravelSmsKor`
+   `php artisan config:publish JehongAhn/LaravelSmsKor`
+- Customize the package config files.
+   `app/config/packages/jehong-ahn/laravel-sms-kor`
 
+
+### HOW TO USE
+
+```php
+Sms::send([
+	'phone' => '01011112222', // recipient
+	'message' => 'Hello.'
+]);
+```
 
